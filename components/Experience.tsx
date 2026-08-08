@@ -1,5 +1,6 @@
 import { education, experience, languages } from "@/lib/data";
 import { Reveal } from "@/components/Reveal";
+import { ExperienceItem } from "@/components/ExperienceItem";
 
 export function Experience() {
   return (
@@ -11,26 +12,10 @@ export function Experience() {
         </h2>
       </Reveal>
 
-      <div className="mt-10 space-y-10">
+      <div className="mt-10">
         {experience.map((item, i) => (
-          <Reveal
-            key={item.company + item.period}
-            delay={i * 60}
-            className="grid gap-2 border-b border-border pb-10 last:border-0 sm:grid-cols-[220px_1fr]"
-          >
-            <div>
-              <h3 className="text-base font-medium text-ink">{item.company}</h3>
-              <p className="text-sm text-muted">{item.role}</p>
-              <p className="mt-1 font-mono text-xs text-accent">{item.period}</p>
-            </div>
-            <ul className="space-y-2">
-              {item.highlights.map((h) => (
-                <li key={h} className="flex gap-2 text-sm leading-relaxed text-muted">
-                  <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" />
-                  {h}
-                </li>
-              ))}
-            </ul>
+          <Reveal key={item.company + item.period} delay={i * 60}>
+            <ExperienceItem item={item} />
           </Reveal>
         ))}
       </div>

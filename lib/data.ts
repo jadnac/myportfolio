@@ -207,10 +207,12 @@ export const projects: Project[] = [
     description:
       "Delivered an event invitation platform with configurable templates, built for non-technical operators to run independently.",
     tags: ["React", "Dashboard", "Templates"],
+    url: "https://webevents.com/",
   },
   {
     name: "Pulse Plus CRM",
     code: "PP",
+    logo: "/logos/pulseplus.png",
     role: "Independent Consultant",
     description:
       "Designed and delivered a CRM solution for sales and inventory management, mapping manual business processes into a supporting system.",
@@ -223,6 +225,7 @@ export const projects: Project[] = [
     role: "Independent Consultant",
     description: "Delivered a QR-based digital menu solution from concept through rollout.",
     tags: ["QR Code", "React"],
+    url: "https://cocktelli.web.app/",
   },
   {
     name: "Waspo Energy (Middle East)",
@@ -232,14 +235,15 @@ export const projects: Project[] = [
     description:
       "Delivered a corporate web presence for an energy-sector client, managing expectations and revision cycles to fixed timelines.",
     tags: ["Corporate Site", "Web", "Middle East"],
+    url: "https://waspoenergy.com/",
   },
   {
-    name: "Shopify App — Massyve Tech",
-    code: "SH",
-    role: "Full Stack Developer",
-    description:
-      "Built and shipped a commercial Shopify application giving merchants data backup, export, and restore capability, protecting stores against data loss.",
-    tags: ["Shopify", "ReactJS", "Node.js"],
+    name: "ANHS — Andre Nacouzi Academy",
+    code: "AN",
+    role: "Independent Consultant",
+    description: "Developed an informational website for Andre Nacouzi Academy.",
+    tags: ["Education", "Web"],
+    url: "https://anhs.web.app",
   },
 ];
 

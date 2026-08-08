@@ -1,6 +1,11 @@
+// TODO: replace with the real production domain once this is deployed —
+// referenced by metadataBase, canonical URLs, robots.txt, and sitemap.xml.
+export const siteUrl = "https://jadnacouzi.com";
+
 export const profile = {
   name: "Jad Nacouzi",
   title: "Lead / Consultant",
+  jobTitle: "Senior Full Stack Developer & Team Lead",
   location: "Jbeil, Lebanon",
   email: "jadnacouzi@gmail.com",
   phone: "+961 76 190 574",
@@ -9,6 +14,29 @@ export const profile = {
   github: "https://github.com/jadnac",
   calendly: "https://calendly.com/jadnacouzi/30min",
 };
+
+export const seoKeywords = [
+  "Jad Nacouzi",
+  "Senior Full Stack Developer",
+  "Full Stack Developer & Team Lead",
+  "Software Consultant",
+  "Independent Technical Consultant",
+  "Technical Team Lead",
+  "Scrum Master",
+  "Java Spring Boot Developer",
+  ".NET Developer",
+  "React Developer",
+  "Next.js Developer",
+  "Node.js Developer",
+  "PHP Developer",
+  "React Native Developer",
+  "Enterprise Software Consultant",
+  "AI Integration Consultant",
+  "Freelance Software Consultant Lebanon",
+  "Software Developer Middle East",
+  "Web Application Development",
+  "Mobile App Development",
+];
 
 export const stats = [
   { value: "7+", label: "Years of experience" },
@@ -122,15 +150,20 @@ export const services: Service[] = [
 
 export type Project = {
   name: string;
+  code: string;
   role: string;
   description: string;
   tags: string[];
   url?: string;
+  /** Optional path under /public (e.g. "/logos/pigrun.png"). Falls back to the generated monogram cover when unset. */
+  logo?: string;
 };
 
 export const projects: Project[] = [
   {
     name: "PartOf — Fondation LLJ (Switzerland)",
+    code: "PF",
+    logo: "/logos/partof.png",
     role: "Independent Consultant",
     description:
       "Led delivery of a multi-platform product — mobile application, public website, and administrative dashboard — for an international client, coordinating scope across all three channels and managing App Store publication.",
@@ -138,6 +171,8 @@ export const projects: Project[] = [
   },
   {
     name: "PTPTIPS / SPSTIPS",
+    code: "PT",
+    logo: "/logos/ptptips.png",
     role: "SBW Group — Full Stack Developer",
     description:
       "Delivered and maintained two revenue-generating platforms serving 1,000+ customers, including a proprietary statistics engine and affiliate integrations with four international sportsbook operators.",
@@ -146,6 +181,8 @@ export const projects: Project[] = [
   },
   {
     name: "PigRun Solutions (Canada)",
+    code: "PR",
+    logo: "/logos/pigrun.png",
     role: "Independent Consultant",
     description:
       "Delivered a web application with role-based dashboards structured around distinct business functions, working across time zones with a fully remote client.",
@@ -154,6 +191,8 @@ export const projects: Project[] = [
   },
   {
     name: "ECCO2 (Switzerland)",
+    code: "EC",
+    logo: "/logos/ecco2.png",
     role: "Independent Consultant",
     description:
       "Took over maintenance and deployment ownership of an inherited production application, managing releases into a live environment.",
@@ -162,6 +201,8 @@ export const projects: Project[] = [
   },
   {
     name: "Web Events",
+    code: "WE",
+    logo: "/logos/webevents.png",
     role: "Independent Consultant",
     description:
       "Delivered an event invitation platform with configurable templates, built for non-technical operators to run independently.",
@@ -169,6 +210,7 @@ export const projects: Project[] = [
   },
   {
     name: "Pulse Plus CRM",
+    code: "PP",
     role: "Independent Consultant",
     description:
       "Designed and delivered a CRM solution for sales and inventory management, mapping manual business processes into a supporting system.",
@@ -176,12 +218,16 @@ export const projects: Project[] = [
   },
   {
     name: "COCKTELLI",
+    code: "CK",
+    logo: "/logos/cocktelli.png",
     role: "Independent Consultant",
     description: "Delivered a QR-based digital menu solution from concept through rollout.",
     tags: ["QR Code", "React"],
   },
   {
     name: "Waspo Energy (Middle East)",
+    code: "WP",
+    logo: "/logos/waspo.png",
     role: "Independent Consultant",
     description:
       "Delivered a corporate web presence for an energy-sector client, managing expectations and revision cycles to fixed timelines.",
@@ -189,6 +235,7 @@ export const projects: Project[] = [
   },
   {
     name: "Shopify App — Massyve Tech",
+    code: "SH",
     role: "Full Stack Developer",
     description:
       "Built and shipped a commercial Shopify application giving merchants data backup, export, and restore capability, protecting stores against data loss.",

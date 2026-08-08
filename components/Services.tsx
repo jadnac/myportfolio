@@ -16,15 +16,19 @@ export function Services() {
         {services.map((s, i) => (
           <Reveal key={s.title} delay={i * 60}>
             <TiltCard>
-              <div className="flex h-full flex-col rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-accent/50">
-                <h3 className="text-base font-medium text-ink">{s.title}</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{s.description}</p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {s.tags.map((tag) => (
-                    <span key={tag} className="rounded-full bg-surface-2 px-2.5 py-1 text-xs text-muted">
-                      {tag}
-                    </span>
-                  ))}
+              <div className="relative flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-accent/50">
+                <div className="pointer-events-none absolute -right-10 -top-12 h-40 w-40 rounded-full bg-accent/15 blur-3xl" />
+                <div className="pointer-events-none absolute -bottom-16 -left-10 h-32 w-32 rounded-full bg-accent/5 blur-3xl" />
+                <div className="relative flex h-full flex-col">
+                  <h3 className="text-base font-medium text-ink">{s.title}</h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{s.description}</p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {s.tags.map((tag) => (
+                      <span key={tag} className="rounded-full bg-surface-2 px-2.5 py-1 text-xs text-muted">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </TiltCard>

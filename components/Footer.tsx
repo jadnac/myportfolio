@@ -6,7 +6,8 @@ export function Footer() {
       <div className="mx-auto flex max-w-content flex-col gap-6 px-6 py-10 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="font-mono text-sm text-ink">{profile.name}</p>
-          <p className="text-sm text-muted">{profile.title} · {profile.location}</p>
+          {/* <p className="text-sm text-muted">{profile.title} · {profile.location}</p> */}
+          <p className="text-sm text-muted">{profile.title}</p>
         </div>
 
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted">

@@ -22,7 +22,7 @@ export function BookCall() {
               rel="noopener noreferrer"
               className="rounded-full bg-accent px-8 py-3.5 text-sm font-medium text-accent-ink transition-opacity hover:opacity-90"
             >
-              Book a call on Calendly
+              Book a call
             </a>
             <a
               href={profile.whatsapp}

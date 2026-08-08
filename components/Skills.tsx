@@ -14,17 +14,25 @@ export function Skills() {
 
         <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {skillGroups.map((group, i) => (
-            <Reveal key={group.category} delay={i * 60} className="rounded-2xl border border-border bg-bg p-6">
-              <h3 className="text-sm font-medium text-ink">{group.category}</h3>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {group.items.map((item) => (
-                  <span
-                    key={item}
-                    className="rounded-full border border-border bg-surface-2 px-3 py-1 text-xs text-muted"
-                  >
-                    {item}
-                  </span>
-                ))}
+            <Reveal
+              key={group.category}
+              delay={i * 60}
+              className="relative overflow-hidden rounded-2xl border border-border bg-bg p-6"
+            >
+              <div className="pointer-events-none absolute -right-10 -top-12 h-32 w-32 rounded-full bg-accent/15 blur-3xl" />
+              <div className="pointer-events-none absolute -bottom-14 -left-8 h-28 w-28 rounded-full bg-accent/5 blur-3xl" />
+              <div className="relative">
+                <h3 className="text-sm font-medium text-ink">{group.category}</h3>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {group.items.map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-border bg-surface-2 px-3 py-1 text-xs text-muted"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
               </div>
             </Reveal>
           ))}

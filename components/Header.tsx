@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Calendar } from "lucide-react";
 import { profile } from "@/lib/data";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
@@ -54,8 +55,9 @@ export function Header() {
             href={profile.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-accent px-4 py-2 text-sm font-medium text-accent-ink transition-opacity hover:opacity-90"
+            className="flex items-center gap-1.5 rounded-full bg-accent px-4 py-2 text-sm font-medium text-accent-ink transition-opacity hover:opacity-90"
           >
+            <Calendar className="h-4 w-4" strokeWidth={2} />
             Book a call
           </a>
         </div>
@@ -92,8 +94,9 @@ export function Header() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
-            className="mt-2 rounded-full bg-accent px-4 py-2 text-center text-sm font-medium text-accent-ink"
+            className="mt-2 flex items-center justify-center gap-1.5 rounded-full bg-accent px-4 py-2 text-center text-sm font-medium text-accent-ink"
           >
+            <Calendar className="h-4 w-4" strokeWidth={2} />
             Book a call
           </a>
         </nav>

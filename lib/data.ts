@@ -63,42 +63,51 @@ export const about = {
 
 export type SkillGroup = {
   category: string;
+  icon: "backend" | "frontend" | "data" | "cloud" | "integrations" | "mobile" | "tools";
   items: string[];
 };
 
 export const skillGroups: SkillGroup[] = [
   {
     category: "Backend",
+    icon: "backend",
     items: ["Java (Spring Boot)", ".NET", "Node.js", "PHP", "Express.js", "Python (scripting)"],
   },
   {
     category: "Frontend",
+    icon: "frontend",
     items: ["ReactJS", "Next.js", "TypeScript", "JavaScript", "Redux", "ASP.NET MVC (Razor)", "HTML", "CSS"],
   },
   {
     category: "Data & Search",
+    icon: "data",
     items: ["SQL Server", "PostgreSQL", "MySQL", "MongoDB", "Prisma", "Sequelize", "Elasticsearch / ELK Stack"],
   },
   {
     category: "Cloud & DevOps",
+    icon: "cloud",
     items: ["AWS", "Elastic Beanstalk", "CI/CD", "Google Firebase", "IIS", "Linux", "Bash"],
   },
   {
     category: "Integrations",
+    icon: "integrations",
     items: ["REST & SOAP APIs", "Payment Gateway Integration", "Microsoft Graph API", "Third-Party API Integration"],
   },
   {
     category: "Mobile",
+    icon: "mobile",
     items: ["React Native", "App Store & Google Play"],
   },
   {
     category: "Process & Tools",
+    icon: "tools",
     items: ["Agile", "Scrum", "GitHub", "Bitbucket", "ClickUp", "Postman", "Swagger"],
   },
 ];
 
 export type Service = {
   title: string;
+  icon: "web" | "architecture" | "mobile" | "api" | "cloud" | "leadership" | "ai";
   description: string;
   tags: string[];
 };
@@ -106,42 +115,49 @@ export type Service = {
 export const services: Service[] = [
   {
     title: "Full-Stack Web Development",
+    icon: "web",
     description:
       "End-to-end product builds — React/Next.js frontends backed by Spring Boot, .NET, or Node/Express APIs, owned from database schema to production deploy.",
     tags: ["React", "Next.js", "Spring Boot", ".NET", "Node.js"],
   },
   {
     title: "Enterprise System Architecture",
+    icon: "architecture",
     description:
       "Designing backend architecture and database schemas that hold up under real load, including search optimization with Elasticsearch.",
     tags: ["System Design", "SQL Server", "PostgreSQL", "Elasticsearch"],
   },
   {
     title: "Mobile App Development",
+    icon: "mobile",
     description:
       "Hybrid mobile apps with React Native, shipped through to the App Store and Google Play.",
     tags: ["React Native", "iOS", "Android"],
   },
   {
     title: "API Design & Integration",
+    icon: "api",
     description:
       "REST & SOAP APIs, payment gateway integration, and third-party services like Microsoft Graph API — designed for real frontend consumption, documented with Swagger and tested with Postman.",
     tags: ["REST", "SOAP", "Payment Gateways", "Microsoft Graph API"],
   },
   {
     title: "Cloud Deployment & DevOps",
+    icon: "cloud",
     description:
       "Deploying and maintaining applications on AWS and Elastic Beanstalk, with CI/CD pipelines that make shipping boring (in a good way).",
     tags: ["AWS", "Elastic Beanstalk", "CI/CD"],
   },
   {
     title: "Team Leadership & Mentorship",
+    icon: "leadership",
     description:
       "Running Agile ceremonies as Scrum Master, and mentoring junior developers and trainees through code review and technical onboarding.",
     tags: ["Scrum Master", "Code Review", "Mentorship"],
   },
   {
     title: "AI Integration",
+    icon: "ai",
     description:
       "Adding AI-powered features and automation into existing products — from LLM-backed workflows to intelligent search — so teams get real time back, not just a demo.",
     tags: ["AI Integration", "LLM APIs", "Automation"],

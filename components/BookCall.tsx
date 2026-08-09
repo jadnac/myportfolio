@@ -1,15 +1,14 @@
+import { Calendar, Phone } from "lucide-react";
 import { profile } from "@/lib/data";
 import { Reveal } from "@/components/Reveal";
+import { SectionHeading } from "@/components/SectionHeading";
 
 export function BookCall() {
   return (
     <section id="contact" className="section border-t border-border bg-surface">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
         <Reveal className="flex flex-col items-center rounded-3xl border border-border bg-bg px-6 py-16 text-center sm:px-16">
-          <p className="font-mono text-sm text-accent">Book a call</p>
-          <h2 className="mt-2 max-w-xl text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-            Let&apos;s talk about your project
-          </h2>
+          <SectionHeading icon={Calendar} eyebrow="Book a call" title="Let's talk about your project" />
           <p className="mt-3 max-w-lg text-muted">
             Pick a time that works for you and I&apos;ll walk you through how I&apos;d approach it —
             no pressure, no sales script.
@@ -20,8 +19,9 @@ export function BookCall() {
               href={profile.calendly}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-accent px-8 py-3.5 text-sm font-medium text-accent-ink transition-opacity hover:opacity-90"
+              className="flex items-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-medium text-accent-ink transition-opacity hover:opacity-90"
             >
+              <Calendar className="h-4 w-4" strokeWidth={2} />
               Book a call
             </a>
             <a
@@ -41,8 +41,9 @@ export function BookCall() {
 
           <a
             href={`tel:${profile.phone.replace(/\s+/g, "")}`}
-            className="mt-4 font-mono text-sm text-muted transition-colors hover:text-ink"
+            className="mt-4 flex items-center gap-1.5 font-mono text-sm text-muted transition-colors hover:text-ink"
           >
+            <Phone className="h-3.5 w-3.5" strokeWidth={2} />
             {profile.phone}
           </a>
         </Reveal>

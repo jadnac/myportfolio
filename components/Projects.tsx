@@ -1,17 +1,16 @@
+import { FolderGit2 } from "lucide-react";
 import { projects } from "@/lib/data";
 import { Reveal } from "@/components/Reveal";
 import { TiltCard } from "@/components/TiltCard";
 import { ProjectCover } from "@/components/ProjectCover";
+import { SectionHeading } from "@/components/SectionHeading";
 
 export function Projects() {
   return (
     <section id="projects" className="section border-t border-border bg-surface">
       <div className="mx-auto max-w-content px-6 py-20 sm:py-28">
         <Reveal>
-          <p className="font-mono text-sm text-accent">Projects</p>
-          <h2 className="mt-2 max-w-xl text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-            Selected work
-          </h2>
+          <SectionHeading icon={FolderGit2} eyebrow="Projects" title="Selected work" />
         </Reveal>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 [perspective:1000px]">

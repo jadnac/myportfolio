@@ -36,14 +36,9 @@ export function ExperienceItem({ item }: { item: ExperienceItemType }) {
 
       <div className={`grid transition-all duration-300 ease-out ${open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
         <div className="overflow-hidden">
-          <ul className={`space-y-2 pb-6 transition-opacity duration-300 ${open ? "opacity-100" : "opacity-0"}`}>
-            {item.highlights.map((h) => (
-              <li key={h} className="flex gap-2 text-sm leading-relaxed text-muted">
-                <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" />
-                {h}
-              </li>
-            ))}
-          </ul>
+          <p className={`pb-6 text-sm leading-relaxed text-muted transition-opacity duration-300 ${open ? "opacity-100" : "opacity-0"}`}>
+            {item.summary}
+          </p>
         </div>
       </div>
     </div>

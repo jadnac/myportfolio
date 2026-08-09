@@ -41,7 +41,7 @@ export const seoKeywords = [
 export const stats = [
   { value: "7+", label: "Years of experience" },
   { value: "20+", label: "Clients served" },
-  { value: "2+", label: "Years mentoring developers" },
+  { value: "3+", label: "Years mentoring developers" },
   { value: "1,000+", label: "End users on apps I've shipped" },
 ];
 

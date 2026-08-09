@@ -1,3 +1,4 @@
+import { Calendar, FolderGit2 } from "lucide-react";
 import { profile } from "@/lib/data";
 import { AnimatedHeadline } from "@/components/AnimatedHeadline";
 
@@ -36,14 +37,16 @@ export function Hero() {
             href={profile.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-ink transition-opacity hover:opacity-90"
+            className="flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-ink transition-opacity hover:opacity-90"
           >
+            <Calendar className="h-4 w-4" strokeWidth={2} />
             Book a call
           </a>
           <a
             href="#projects"
-            className="rounded-full border border-border px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-surface-2"
+            className="flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-surface-2"
           >
+            <FolderGit2 className="h-4 w-4" strokeWidth={2} />
             View projects
           </a>
         </div>

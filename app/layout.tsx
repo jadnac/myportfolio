@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { StructuredData } from "@/components/StructuredData";
+import { WelcomePopup } from "@/components/WelcomePopup";
 import { profile, seoKeywords, siteUrl } from "@/lib/data";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -12,7 +13,7 @@ const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 const title = `${profile.name} | ${profile.jobTitle}`;
 const description =
-  "Jad Nacouzi is a Senior Full Stack Developer & Technical Consultant with 7+ years delivering enterprise software in Java (Spring Boot), .NET, React, Next.js, and Node.js — from requirements to production support.";
+  "Jad Nacouzi is a Senior Full Stack Developer & Technical Consultant with 7+ years delivering enterprise software in Java (Spring Boot), .NET, React, Next.js, and Node.js, from requirements to production support.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     title,
     description,
-    siteName: `${profile.name} — Portfolio`,
+    siteName: `${profile.name} Portfolio`,
     locale: "en_US",
   },
   twitter: {
@@ -71,6 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header />
           <main>{children}</main>
           <Footer />
+          <WelcomePopup />
         </ThemeProvider>
       </body>
     </html>

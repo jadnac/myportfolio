@@ -26,7 +26,7 @@ export function Experience() {
             <p className="text-sm font-medium text-ink">Education</p>
           </div>
           <p className="mt-2 text-sm text-muted">
-            {education.degree} — {education.school}
+            {education.degree} · {education.school}
           </p>
           <p className="font-mono text-xs text-accent">{education.period}</p>
         </div>

@@ -27,9 +27,19 @@ const config: Config = {
           "0%": { opacity: "0", transform: "translateY(12px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        popIn: {
+          "0%": { opacity: "0", transform: "scale(0.95) translateY(8px)" },
+          "100%": { opacity: "1", transform: "scale(1) translateY(0)" },
+        },
       },
       animation: {
         fadeUp: "fadeUp 0.6s ease-out both",
+        fadeIn: "fadeIn 0.25s ease-out both",
+        popIn: "popIn 0.3s ease-out both",
       },
     },
   },

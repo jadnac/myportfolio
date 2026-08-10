@@ -10,8 +10,8 @@ export function BookCall() {
         <Reveal className="flex flex-col items-center rounded-3xl border border-border bg-bg px-6 py-16 text-center sm:px-16">
           <SectionHeading icon={Calendar} eyebrow="Book a call" title="Let's talk about your project" />
           <p className="mt-3 max-w-lg text-muted">
-            Pick a time that works for you and I&apos;ll walk you through how I&apos;d approach it —
-            no pressure, no sales script.
+            Pick a time that works for you and I&apos;ll walk you through how I&apos;d approach it.
+            No pressure, no sales script.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">

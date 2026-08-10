@@ -1,5 +1,5 @@
-// TODO: replace with the real production domain once this is deployed —
-// referenced by metadataBase, canonical URLs, robots.txt, and sitemap.xml.
+// TODO: replace with the real production domain once this is deployed.
+// Referenced by metadataBase, canonical URLs, robots.txt, and sitemap.xml.
 export const siteUrl = "https://jadnacouzi.com";
 
 export const profile = {
@@ -48,15 +48,15 @@ export const stats = [
 export const whyIDoThis = {
   heading: "Why I do this",
   paragraphs: [
-    "My vision is simple: help people get their time back. Every business I work with is buried in manual work, disconnected tools, or processes that were never designed to scale — and the right piece of software, built well, quietly gives that time back so people can focus on what actually matters.",
-    "That's the standard I hold every solution to — not more software for the sake of software, but the right tool, applied well, that makes someone's job genuinely easier. I split my time evenly between building those solutions and mentoring junior developers, because passing that standard on matters just as much as meeting it myself.",
+    "My vision is simple: help people get their time back. Every business I work with is buried in manual work, disconnected tools, or processes that were never designed to scale. The right piece of software, built well, quietly gives that time back so people can focus on what actually matters.",
+    "That's the standard I hold every solution to: not more software for the sake of software, but the right tool, applied well, that makes someone's job genuinely easier. I split my time evenly between building those solutions and mentoring junior developers, because passing that standard on matters just as much as meeting it myself.",
   ],
 };
 
 export const about = {
   heading: "Who I am",
   paragraphs: [
-    "I'm a Lead Full Stack Developer and Consultant with 7+ years of experience turning business problems into working solutions. I've led as a Scrum Master and technical lead inside enterprise teams — running sprints, managing stakeholders, and translating business needs into a roadmap engineers can actually execute — and independently as a consultant trusted to take a project from a first conversation to a live product real people use.",
+    "I'm a Lead Full Stack Developer and Consultant with 7+ years of experience turning business problems into working solutions. I've led as a Scrum Master and technical lead inside enterprise teams, running sprints, managing stakeholders, and translating business needs into a roadmap engineers can actually execute. I've also worked independently as a consultant trusted to take a project from a first conversation to a live product real people use.",
     "Currently I lead delivery at MADA, where I own project and team direction, coordinate between business and engineering, and mentor junior developers and trainees through code review and onboarding. Outside of that, I take on consulting engagements for founders and small teams who need someone to turn their process into a system that saves them time.",
   ],
 };
@@ -117,7 +117,7 @@ export const services: Service[] = [
     title: "Full-Stack Web Development",
     icon: "web",
     description:
-      "End-to-end product builds — React/Next.js frontends backed by Spring Boot, .NET, or Node/Express APIs, owned from database schema to production deploy.",
+      "End-to-end product builds: React/Next.js frontends backed by Spring Boot, .NET, or Node/Express APIs, owned from database schema to production deploy.",
     tags: ["React", "Next.js", "Spring Boot", ".NET", "Node.js"],
   },
   {
@@ -138,7 +138,7 @@ export const services: Service[] = [
     title: "API Design & Integration",
     icon: "api",
     description:
-      "REST & SOAP APIs, payment gateway integration, and third-party services like Microsoft Graph API — designed for real frontend consumption, documented with Swagger and tested with Postman.",
+      "REST & SOAP APIs, payment gateway integration, and third-party services like Microsoft Graph API. Designed for real frontend consumption, documented with Swagger, and tested with Postman.",
     tags: ["REST", "SOAP", "Payment Gateways", "Microsoft Graph API"],
   },
   {
@@ -159,7 +159,7 @@ export const services: Service[] = [
     title: "AI Integration",
     icon: "ai",
     description:
-      "Adding AI-powered features and automation into existing products — from LLM-backed workflows to intelligent search — so teams get real time back, not just a demo.",
+      "Adding AI-powered features and automation into existing products, from LLM-backed workflows to intelligent search, so teams get real time back, not just a demo.",
     tags: ["AI Integration", "LLM APIs", "Automation"],
   },
 ];
@@ -177,19 +177,19 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: "PartOf — Fondation LLJ (Switzerland)",
+    name: "PartOf · Fondation LLJ (Switzerland)",
     code: "PF",
     logo: "/logos/partof.png",
     role: "Independent Consultant",
     description:
-      "Led delivery of a multi-platform product — mobile application, public website, and administrative dashboard — for an international client, coordinating scope across all three channels and managing App Store publication.",
+      "Led delivery of a multi-platform product (mobile application, public website, and administrative dashboard) for an international client, coordinating scope across all three channels and managing App Store publication.",
     tags: ["Mobile", "React", "Admin Dashboard", "Switzerland"],
   },
   {
     name: "PTPTIPS / SPSTIPS",
     code: "PT",
     logo: "/logos/ptptips.png",
-    role: "SBW Group — Full Stack Developer",
+    role: "SBW Group · Full Stack Developer",
     description:
       "Delivered and maintained two revenue-generating platforms serving 1,000+ customers, including a proprietary statistics engine and affiliate integrations with four international sportsbook operators.",
     tags: ["ReactJS", "Express.js", "AWS", "CI/CD"],
@@ -254,7 +254,7 @@ export const projects: Project[] = [
     url: "https://waspoenergy.com/",
   },
   {
-    name: "ANHS — Andre Nacouzi Academy",
+    name: "ANHS · Andre Nacouzi Academy",
     code: "AN",
     role: "Independent Consultant",
     description: "Developed an informational website for Andre Nacouzi Academy.",
@@ -276,14 +276,14 @@ export const experience: ExperienceItem[] = [
     role: "Senior Full Stack Developer & Team Lead",
     period: "11/2023 – Present",
     summary:
-      "Lead a team of developers and trainees as Scrum Master, running delivery across concurrent enterprise projects — an enterprise billing platform, national public-sector programs, a document-processing OCR solution, a GRC portal, and mobile app enhancements. I set technical direction, established QA practice within the team, and act as the bridge between business, QA, and client-side stakeholders.",
+      "Lead a team of developers and trainees as Scrum Master, running delivery across concurrent enterprise projects: an enterprise billing platform, national public-sector programs, a document-processing OCR solution, a GRC portal, and mobile app enhancements. I set technical direction, established QA practice within the team, and act as the bridge between business, QA, and client-side stakeholders.",
   },
   {
     company: "Independent Consultant",
     role: "Solution Delivery & Technical Advisory",
     period: "Concurrent",
     summary:
-      "Advise businesses across 7+ engagements in Europe, North America, and the Middle East as sole point of contact — assessing needs, scoping work, and delivering end to end. Projects span a multi-platform product for Fondation LLJ, role-based dashboards for PigRun Solutions, a corporate site for Waspo Energy, a CRM for Pulse Plus, an event platform for Web Events, a digital menu system for COCKTELLI, and production support for ECCO2.",
+      "Advise businesses across 7+ engagements in Europe, North America, and the Middle East as sole point of contact, assessing needs, scoping work, and delivering end to end. Projects span a multi-platform product for Fondation LLJ, role-based dashboards for PigRun Solutions, a corporate site for Waspo Energy, a CRM for Pulse Plus, an event platform for Web Events, a digital menu system for COCKTELLI, and production support for ECCO2.",
   },
   {
     company: "Massyve Tech",

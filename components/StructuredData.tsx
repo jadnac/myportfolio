@@ -7,7 +7,7 @@ export function StructuredData() {
     name: profile.name,
     jobTitle: profile.jobTitle,
     description:
-      "Senior Full Stack Developer & Technical Consultant with 7+ years delivering enterprise software and leading development teams.",
+      "Senior Full Stack Developer & Technical Consultant with 10+ years delivering enterprise software, from architecture through production support.",
     url: siteUrl,
     image: `${siteUrl}/opengraph-image`,
     email: `mailto:${profile.email}`,
@@ -22,10 +22,6 @@ export function StructuredData() {
     alumniOf: {
       "@type": "CollegeOrUniversity",
       name: education.school,
-    },
-    worksFor: {
-      "@type": "Organization",
-      name: "MADA",
     },
   };
 

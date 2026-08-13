@@ -13,7 +13,7 @@ const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 const title = `${profile.name} | ${profile.jobTitle}`;
 const description =
-  "Jad Nacouzi is a Senior Full Stack Developer & Technical Consultant with 7+ years delivering enterprise software in Java (Spring Boot), .NET, React, Next.js, and Node.js, from requirements to production support.";
+  "Jad Nacouzi is a Senior Full Stack Developer & Technical Consultant with 10+ years delivering enterprise software in Java (Spring Boot), .NET, React, Next.js, and Node.js, from requirements to production support.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

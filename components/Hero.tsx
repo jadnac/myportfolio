@@ -28,7 +28,7 @@ export function Hero() {
           />
 
           <p className="mt-6 max-w-2xl text-lg text-muted animate-fadeUp [animation-delay:160ms]">
-            I&apos;m {profile.name}, a {profile.title.toLowerCase()} with 7+ years turning
+            I&apos;m {profile.name}, a {profile.title.toLowerCase()} with 10+ years turning
             business problems into software that works, from the first conversation to a
             product your team relies on every day.
           </p>

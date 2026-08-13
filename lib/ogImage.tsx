@@ -39,7 +39,7 @@ export function buildOgImage() {
         </div>
         <div style={{ marginTop: 14, fontSize: 38, color: "#4adabe", display: "flex" }}>{profile.jobTitle}</div>
         <div style={{ marginTop: 30, fontSize: 28, color: "#9e9e9a", display: "flex", maxWidth: 920 }}>
-          7+ years turning business problems into software that works.
+          10+ years turning business problems into software that works.
         </div>
       </div>
     ),

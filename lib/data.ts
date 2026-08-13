@@ -5,7 +5,7 @@ export const siteUrl = "https://jadnacouzi.com";
 export const profile = {
   name: "Jad Nacouzi",
   title: "Lead / Consultant",
-  jobTitle: "Senior Full Stack Developer & Team Lead",
+  jobTitle: "Senior Full Stack Developer & Technical Consultant",
   location: "Jbeil, Lebanon",
   email: "jadnacouzi@gmail.com",
   phone: "+961 76 190 574",
@@ -18,10 +18,8 @@ export const profile = {
 export const seoKeywords = [
   "Jad Nacouzi",
   "Senior Full Stack Developer",
-  "Full Stack Developer & Team Lead",
   "Software Consultant",
   "Independent Technical Consultant",
-  "Technical Team Lead",
   "Scrum Master",
   "Java Spring Boot Developer",
   ".NET Developer",
@@ -39,9 +37,9 @@ export const seoKeywords = [
 ];
 
 export const stats = [
-  { value: "7+", label: "Years of experience" },
+  { value: "10+", label: "Years of experience" },
   { value: "20+", label: "Clients served" },
-  { value: "3+", label: "Years mentoring developers" },
+  { value: "4+", label: "Years mentoring developers" },
   { value: "1,000+", label: "End users on apps I've shipped" },
 ];
 
@@ -56,8 +54,8 @@ export const whyIDoThis = {
 export const about = {
   heading: "Who I am",
   paragraphs: [
-    "I'm a Lead Full Stack Developer and Consultant with 7+ years of experience turning business problems into working solutions. I've led as a Scrum Master and technical lead inside enterprise teams, running sprints, managing stakeholders, and translating business needs into a roadmap engineers can actually execute. I've also worked independently as a consultant trusted to take a project from a first conversation to a live product real people use.",
-    "Currently I lead delivery at MADA, where I own project and team direction, coordinate between business and engineering, and mentor junior developers and trainees through code review and onboarding. Outside of that, I take on consulting engagements for founders and small teams who need someone to turn their process into a system that saves them time.",
+    "I'm a Full Stack Developer and Consultant with 10+ years of experience turning business problems into working solutions. I've worked as a Scrum Master and technical lead inside enterprise teams, running sprints, managing stakeholders, and translating business needs into a roadmap engineers can actually execute. I've also worked independently as a consultant trusted to take a project from a first conversation to a live product real people use.",
+    "Most recently, I led delivery at MADA, owning project and team direction, coordinating between business and engineering, and mentoring junior developers and trainees through code review and onboarding. Today I focus full-time on independent consulting, helping founders and small teams turn their process into a system that saves them time.",
   ],
 };
 
@@ -114,6 +112,13 @@ export type Service = {
 
 export const services: Service[] = [
   {
+    title: "AI Integration & Solutions",
+    icon: "ai",
+    description:
+      "Building AI-powered solutions from scratch and adding AI features into existing products, from LLM-backed workflows to intelligent search, so teams get real time back, not just a demo.",
+    tags: ["AI Solutions", "AI Integration", "LLM APIs", "Automation"],
+  },
+  {
     title: "Full-Stack Web Development",
     icon: "web",
     description:
@@ -154,13 +159,6 @@ export const services: Service[] = [
     description:
       "Running Agile ceremonies as Scrum Master, and mentoring junior developers and trainees through code review and technical onboarding.",
     tags: ["Scrum Master", "Code Review", "Mentorship"],
-  },
-  {
-    title: "AI Integration",
-    icon: "ai",
-    description:
-      "Adding AI-powered features and automation into existing products, from LLM-backed workflows to intelligent search, so teams get real time back, not just a demo.",
-    tags: ["AI Integration", "LLM APIs", "Automation"],
   },
 ];
 
@@ -274,9 +272,9 @@ export const experience: ExperienceItem[] = [
   {
     company: "MADA",
     role: "Senior Full Stack Developer & Team Lead",
-    period: "11/2023 – Present",
+    period: "11/2023 – 08/2026",
     summary:
-      "Lead a team of developers and trainees as Scrum Master, running delivery across concurrent enterprise projects: an enterprise billing platform, national public-sector programs, a document-processing OCR solution, a GRC portal, and mobile app enhancements. I set technical direction, established QA practice within the team, and act as the bridge between business, QA, and client-side stakeholders.",
+      "Led a team of developers and trainees as Scrum Master, running delivery across concurrent enterprise projects: an enterprise billing platform, national public-sector programs, a document-processing OCR solution, a GRC portal, and mobile app enhancements. I set technical direction, established QA practice within the team, and acted as the bridge between business, QA, and client-side stakeholders.",
   },
   {
     company: "Independent Consultant",

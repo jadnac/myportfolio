@@ -37,7 +37,7 @@ export const seoKeywords = [
 ];
 
 export const stats = [
-  { value: "7+", label: "Years of experience" },
+  { value: "10+", label: "Years of experience" },
   { value: "20+", label: "Clients served" },
   { value: "4+", label: "Years mentoring developers" },
   { value: "1,000+", label: "End users on apps I've shipped" },
@@ -54,7 +54,7 @@ export const whyIDoThis = {
 export const about = {
   heading: "Who I am",
   paragraphs: [
-    "I'm a Full Stack Developer and Consultant with 7+ years of experience turning business problems into working solutions. I've worked as a Scrum Master and technical lead inside enterprise teams, running sprints, managing stakeholders, and translating business needs into a roadmap engineers can actually execute. I've also worked independently as a consultant trusted to take a project from a first conversation to a live product real people use.",
+    "I'm a Full Stack Developer and Consultant with 10+ years of experience turning business problems into working solutions. I've worked as a Scrum Master and technical lead inside enterprise teams, running sprints, managing stakeholders, and translating business needs into a roadmap engineers can actually execute. I've also worked independently as a consultant trusted to take a project from a first conversation to a live product real people use.",
     "Most recently, I led delivery at MADA, owning project and team direction, coordinating between business and engineering, and mentoring junior developers and trainees through code review and onboarding. Today I focus full-time on independent consulting, helping founders and small teams turn their process into a system that saves them time.",
   ],
 };

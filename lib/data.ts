@@ -233,13 +233,14 @@ export const projects: Project[] = [
     tags: ["CRM", "Sales", "Inventory"],
   },
   {
-    name: "COCKTELLI",
-    code: "CK",
-    logo: "/logos/cocktelli.png",
+    name: "Agech Solutions",
+    code: "AG",
+    logo: "/logos/agech.png",
     role: "Independent Consultant",
-    description: "Delivered a QR-based digital menu solution from concept through rollout.",
-    tags: ["QR Code", "React"],
-    url: "https://cocktelli.web.app/",
+    description:
+      "Delivered the corporate website for Agech Solutions, a software engineering and security consultancy specializing in AI platforms, web and mobile products, cloud infrastructure, and penetration testing.",
+    tags: ["Corporate Site", "Web", "AI"],
+    url: "https://agech.com",
   },
   {
     name: "Waspo Energy (Middle East)",
@@ -281,7 +282,7 @@ export const experience: ExperienceItem[] = [
     role: "Solution Delivery & Technical Advisory",
     period: "Concurrent",
     summary:
-      "Advise businesses across 7+ engagements in Europe, North America, and the Middle East as sole point of contact, assessing needs, scoping work, and delivering end to end. Projects span a multi-platform product for Fondation LLJ, role-based dashboards for PigRun Solutions, a corporate site for Waspo Energy, a CRM for Pulse Plus, an event platform for Web Events, a digital menu system for COCKTELLI, and production support for ECCO2.",
+      "Advise businesses across 7+ engagements in Europe, North America, and the Middle East as sole point of contact, assessing needs, scoping work, and delivering end to end. Projects span a multi-platform product for Fondation LLJ, role-based dashboards for PigRun Solutions, corporate sites for Waspo Energy and Agech Solutions, a CRM for Pulse Plus, an event platform for Web Events, and production support for ECCO2.",
   },
   {
     company: "Massyve Tech",
